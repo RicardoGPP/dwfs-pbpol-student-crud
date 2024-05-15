@@ -1,6 +1,6 @@
 from django.urls import reverse_lazy
 from django.views import generic
-from rest_framework import viewsets
+from rest_framework import viewsets, permissions
 from .models import Aluno
 from .forms import AlunoForm
 from .serializers import AlunoSerializer
@@ -8,6 +8,7 @@ from .serializers import AlunoSerializer
 class AlunoViewSet(viewsets.ModelViewSet):
     queryset = Aluno.objects.all()
     serializer_class = AlunoSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 class AlunoListView(generic.ListView):
     template_name = "listar.html"
