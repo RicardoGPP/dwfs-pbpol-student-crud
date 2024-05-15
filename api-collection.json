@@ -1,0 +1,98 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "PBPOL - Projeto final",
+    "collectionId": "4e3a6307-f5e3-49ab-b376-3b169a2543e5",
+    "dateExported": "2024-05-15T12:19:33.884Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5624b6d0-cc9c-4759-b04d-bb3dc6b4db53",
+            "colId": "4e3a6307-f5e3-49ab-b376-3b169a2543e5",
+            "containerId": "",
+            "name": "Listar alunos",
+            "url": "http://127.0.0.1:8000/api/alunos",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-15T12:14:19.550Z",
+            "modified": "2024-05-15T12:14:36.092Z",
+            "headers": []
+        },
+        {
+            "_id": "048fe7b3-a74a-428e-9f27-801d186058e7",
+            "colId": "4e3a6307-f5e3-49ab-b376-3b169a2543e5",
+            "containerId": "",
+            "name": "Detalhar um aluno",
+            "url": "http://127.0.0.1:8000/api/alunos/4",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-05-15T12:15:43.396Z",
+            "modified": "2024-05-15T12:15:59.777Z",
+            "headers": []
+        },
+        {
+            "_id": "47470718-239e-4205-b272-ed5ba2ef09f8",
+            "colId": "4e3a6307-f5e3-49ab-b376-3b169a2543e5",
+            "containerId": "",
+            "name": "Criar um aluno",
+            "url": "http://127.0.0.1:8000/api/alunos/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-05-15T12:16:17.797Z",
+            "modified": "2024-05-15T12:16:42.543Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"matricula\": 1235,\n  \"data_nascimento\": \"1995-06-26\",\n  \"email\": \"ricardo.piantavinha@gmail.com\",\n  \"telefone\": \"(19)98229-7535\",\n  \"data_ingresso\": \"2024-05-11\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "659a3baf-ae40-438c-9fdb-7465e904d2d1",
+            "colId": "4e3a6307-f5e3-49ab-b376-3b169a2543e5",
+            "containerId": "",
+            "name": "Editar um aluno (PUT)",
+            "url": "http://127.0.0.1:8000/api/alunos/4/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-05-15T12:17:06.129Z",
+            "modified": "2024-05-15T12:17:42.716Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"matricula\": 1233,\n  \"data_nascimento\": \"1995-06-26\",\n  \"email\": \"ricardo.piantavinha@gmail.com\",\n  \"telefone\": \"(19)98229-7535\",\n  \"data_ingresso\": \"2024-05-11\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "36f05f1c-6345-498c-b00e-940ce1db1757",
+            "colId": "4e3a6307-f5e3-49ab-b376-3b169a2543e5",
+            "containerId": "",
+            "name": "Editar um aluno (PATCH)",
+            "url": "http://127.0.0.1:8000/api/alunos/4/",
+            "method": "PATCH",
+            "sortNum": 50000,
+            "created": "2024-05-15T12:17:52.875Z",
+            "modified": "2024-05-15T12:18:39.665Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"ricardo.piantavinha.portatil@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e60d203a-0410-45c9-8746-d2ac22799fad",
+            "colId": "4e3a6307-f5e3-49ab-b376-3b169a2543e5",
+            "containerId": "",
+            "name": "Excluir um aluno",
+            "url": "http://127.0.0.1:8000/api/alunos/8/",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-05-15T12:19:02.648Z",
+            "modified": "2024-05-15T12:19:10.366Z",
+            "headers": []
+        }
+    ],
+    "ref": "E3uYsypceaPuJqTV4VnUlqxYkAqoUpBXfwBK7C_HT8ni0SMTq5xKB56myDZXt7iLCh8BTe1tgWl6x-PBOvUhWg"
+}
